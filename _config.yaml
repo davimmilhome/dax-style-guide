@@ -1,0 +1,23 @@
+# -- CONFIGURAÇÕES GERAIS --
+title: "Guia de Estilo Power BI"
+description: "Padrões e convenções para construção de dashboards no Microsoft Power BI"
+baseurl: "" # Vazio p/ githubpages
+url: "https://davimmilhome.github.io/dax-style-guide" 
+
+# -- TEMA --
+theme: just-the-docs
+color_scheme: dark
+
+# -- NAVEGAÇÃO --
+aux_links:
+  "Repositório no GitHub":
+    - "https://github.com/davimmilhome/dax-style-guide"
+
+# -- BUILD --
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
