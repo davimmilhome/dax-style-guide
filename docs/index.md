@@ -8,7 +8,7 @@ Este documento tem como objetivo propor um **padrão formal de desenvolvimento**
 
 ## Seções Principais
 
-- [Guia de Formatação Completo](./guia-de-formatação.md)
+- [Guia de Formatação Completo](./guia-de-formatacao.md)
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Como Contribuir](#como-contribuir)
 
