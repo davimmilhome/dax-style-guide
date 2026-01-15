@@ -18,7 +18,7 @@ Este guia foca em dois pontos principais:
 O projeto está hospetado no github pages utilizado um markdown simples e jekyll.
 
 ## Contribuindo
-Para contribuir no projeto abra uma branch com sua modificação e solicite o pull request detalhando o motivo da inclusão e mudança (utilize convetional commits). O PR será avaliado com relação a sua coerênciac com o projeto. Além disso, descreva as alterações no changelog do projeto. </br> </br> 
+Para contribuir no projeto abra uma branch com sua modificação e solicite o pull request detalhando o motivo da inclusão e mudança (utilize convetional commits). O PR será avaliado com relação a sua coerência com o projeto. Além disso, descreva as alterações no changelog do projeto. </br> </br> 
 
 Também sinta-se a vontade para deixar sua issue para debater um ponto em específico ou solicitar alterações, alterações que não necessariamente serão atendidas, mas discutidas de forma aberta.
 
