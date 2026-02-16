@@ -1,3 +1,9 @@
+---
+title: Filosofia do Projeto
+nav_order: 2
+layout: default
+---
+
 # Filosofia do Projeto
 
 Antes de mais nada, para contribuir com esse projeto, bem como para entender as decisões tomadas, é necessário estar a par da filosofia adatoda. Dessa forma, o texto abaixo busca  explicar a direção que o projeto segue, além disso, é necessário ressaltar que o projeto assume que não há como alcançar uma coerência perfeita, então, trabalha de maneira realista e não dogmática.

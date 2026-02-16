@@ -1,10 +1,20 @@
+---
+title: Introdução
+nav_order: 1
+layout: default
+---
+
 # Guia de Formatação de Estilo no Power BI
 
 Bem-vindo ao **Guia de Formatação de Estilo na Construção de Dashboards no Microsoft Power BI**.
 
 Este documento tem como objetivo propor um **padrão formal de desenvolvimento**, abordando convenções de nomenclatura, estruturação de consultas, boas práticas de modelagem e formatação DAX, tudo voltado ao uso do Power BI Desktop.
 
-Acesse o guia de estilo completo em:</br></br>  [Guia de Formatação Completo](docs/guia-de-formatacao.md)
+Acesse o guia de estilo completo em: 
+
+</br>
+
+ - [Guia de Formatação Completo](docs/guia-de-formatacao.md)
 
 
 

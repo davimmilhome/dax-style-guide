@@ -1,4 +1,10 @@
-# Introdução
+---
+title: Guia de Formatação Completo
+nav_order: 3
+layout: default
+---
+
+# Guia de Formatação
 
 É fato que o exercício da análise de dados  e criação de visuais é executado por uma extensa gama de profissionais, inclusive aqueles mais próximos ao negócio. Por conta disso, uma resolução de um mesmo problema pode contar diversas abordagens. Essa característica é um dos fatores determinantes, porém não o único, para a não adoção extensa de padrões de construção.
 

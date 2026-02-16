@@ -3,7 +3,7 @@
 Este é o repositório que hospeda o documento que tem como objetivo propor um padrão formal de desenvolvimento, abordando convenções de nomenclatura, estruturação de consultas, boas práticas de modelagem e formatação DAX, tudo voltado ao uso do Power BI Desktop.
 
 
-[dax-style-guide](https://davimmilhome.github.io/docs/dax-style-guide/)
+[dax-style-guide](https://davimmilhome.github.io/dax-style-guide/)
 
 Atualmente o guia está sendo desenvolvido em português (focado na comunidade brasileira), porém, será traduzido para o inglês em algum momento.
 
