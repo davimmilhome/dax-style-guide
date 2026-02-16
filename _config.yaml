@@ -1,5 +1,5 @@
 # -- CONFIGURAÇÕES GERAIS --
-title: "Guia de Estilo Power BI"
+title: "Dax Style Guide"
 description: "Padrões e convenções para construção de dashboards no Microsoft Power BI"
 baseurl: "/dax-style-guide" # Vazio p/ githubpages
 url: "https://davimmilhome.github.io" 
