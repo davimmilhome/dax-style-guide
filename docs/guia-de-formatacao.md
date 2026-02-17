@@ -26,6 +26,7 @@ A adoção de padrões proporciona consistência no desenvolvimento. A consistê
 Além disso, a adoção de padrões proporciona redução na carga cognitiva, tanto ao ler o código quanto a escrevê-lo, dessa forma, acelerando o desenvolvimento.
 
 # Formatação
+<br>
 
 ## Nomenclatura
 <br>
@@ -47,6 +48,7 @@ Além disso, a recomendação busca evitar qualquer possível erro de encoding q
 Outro ponto de atenção é a evitação de caracteres ambíguos, como a letra “l” minúscula (`l`), que pode ser facilmente confundida com o número “1” ou com a letra maiúscula “I” dependendo da fonte utilizada.
 
 ### Abreviações
+
 <br>
 
 As abreviações recomendadas são os acrônimos consolidados e amplamente reconhecidos no contexto da empresa, acrônimos referentes ao DAX como, por exemplo, `ALL` ou aqueles relacionados à inteligência temporal (como _YTD_, _MTD_, _QTD_, _PY_). Observe a lista descrita na seção _Naming Convention_ no [daxpatterns](https://www.daxpatterns.com/standard-time-related-calculations/).
@@ -55,7 +57,8 @@ O uso de abreviações, que não sejam os citados, deve ser evitado, pois reduz 
 
 Em geral, prefira nomes completos e descritivos, mesmo que mais longos, pois a clareza é mais importante do que economizar caracteres.  
 
-## Descritivo: estilos de nomenclatura
+### Descritivo: estilos de nomenclatura
+
 <br>
 
 Há muitos estilos de escrita e os abaixo são comumente descritos, eles serão citados para a utilização na continuidade do texto.
@@ -76,7 +79,8 @@ Há muitos estilos de escrita e os abaixo são comumente descritos, eles serão 
 
 	Nota: ao utilizar acrônimos em CapWords, deixe maiúscula todas as letras do acrônimo. Como no exemplo: SomaPYTD.
 
-## Consultas do Power Query
+## Tabelas em geral
+
 <br>
 
 Apesar de esse texto não focar especificamente em Power Query, serão abordadas algumas questões que influem no resultado final do projeto.
@@ -89,7 +93,10 @@ A primeira recomendação é que nas tabelas intermediárias deve-se desabilitar
 
 ### Tabelas finais
 <br>
+
 #### Tabelas fato, dimensões e bridges
+
+<br>
 
  * Formatação: __UPPER_CASE_WITH_UNDERSCORES__ com um prefixo representando a natureza da tabela (D, F ou B) e o nome da entidade em singular ou plural. Em tabelas dimensão e bridges, singular e em tabelas fatos o plural. 
 
@@ -107,6 +114,8 @@ Ao contrário do que corriqueiramente se recomenda (utilizar nomes descritivos e
 
 #### Tabelas de medidas
 
+<br>
+
 É preferível que as medidas estejam organizadas em tabelas específicas, sendo possível ter mais de uma tabela de medidas no modelo para o caso de separar as medidas por contexto de tabela.
 
 O padrão se sustenta não somente por questão de organização, mas também porque caso a tabela em que a medida foi baseada precise ser apagada do modelo, a medida não é apagada junto. Sim, existem casos em que é necessário apagar e recriar uma tabela.
@@ -123,6 +132,8 @@ Optou-se pelo Title Case para diferenciar as tabelas de medidas para as tabelas 
 
 ##### Pastas e Subpastas
 
+<br>
+
 Recomenda-se também que as tabelas de medidas tenham sua organização subdivida entre pastas e subpastas, separando assim as medidas por escopo e organizando de forma eficiente o visual. Essa organização têm um custo, a ordem das pastas deve ser definida manualmente e reformada quando se deseja alteração, mas, aqui entende-se que é um custo pequeno frente a organização visual e lógica.
 
 * Formatação: __Title Case__ com prefixo  (numero de ordem seguindo por um ponto final `"1."`). 
@@ -136,7 +147,12 @@ A necessidade de utilização de um prefixo antes da pasta e subpasta serve para
 Caso seja necessário criar medidas para debug, é recomendado criar uma pasta com a nomenclatura "0. Debug" para medidas de debug. Além disso, é uma boa prática separar as medidas de base, aquelas mais simples utilizadas para construir outras medidas,  na primeira pasta.
 
 ### Tabelas Intermediárias
+
+<br>
+
 #### Consultas auxiliares
+
+<br>
 
 * Case: __lower_case_with_underscores__ com prefixo (aux).
 
@@ -152,7 +168,11 @@ Como citado anteriormente, Quaisquer consultas que não sejam uma tabela final e
 
 ## DAX
 
+<br>
+
 ### Medidas
+
+<br>
 
 * Case: __Title Case__ com prefixo (`(local)`).
 
@@ -171,6 +191,8 @@ Além disso, no caso de de lidar com múltiplas tabelas fatos em que medidas ser
 De resto, as abreviações são aceitas como descrito na seção [abreviações](#abreviações). Mas é importante notar que, ao invés de  "(local) Avg Rev" o mais adequado seria "(local) Average Revenue".
 
 #### Organização interna das medidas
+
+<br>
 
 É necessário algumas definições a mais para organizar as medidas adequadamente, dessa forma, recomenda-se:
 
@@ -221,6 +243,8 @@ Por último recomendados separar cada construção de variável e o próprio nom
 
 ### Palavras Reservadas
 
+<br>
+
 * Formatação: __UPPERCASE__
 
 * Exemplo: CALCULATE()
@@ -230,6 +254,8 @@ Por último recomendados separar cada construção de variável e o próprio nom
 O DAX não é _case-sensitive_ para a suas palavras reservadas. A recomendação é utilizar exclusivamente maiúsculas para evidenciar o código e facilitar o _scan_ visual em fórmulas longas, mesmo que já exista uma cor diferente para essas palavras. 
 
 ### Variáveis
+
+<br>
 
 * Formatação: __CapitalizedWords__ com prefixo (`_`).
 
@@ -246,6 +272,8 @@ Neste manual foi escolhido a utilização do _underscore_, porém, caso seja con
 Por sua vez, o CapWords foi escolhido por aparecer consistentemente nos materiais de de Ferrari & Russo, como no livro "The Definitive Guide to Dax: Business Intelligence for Microsoft Power Bi, SQL Server Analysis Services, and Excel".
 
 ### Identação
+
+<br>
 
 Formatação: Identação pendurada (_Hanging Ident_)
 
@@ -299,6 +327,8 @@ VAR _Anterior = CALCULATE(
 
 ### CALCULATE
 
+<br>
+
 O calculate é uma das ferramentas mais importantes e utilizadas do DAX, desse modo, é imprescindível que o mesmo seja escrito de forma semântica e de fácil entendimento, já que o mesmo estará presente em várias medidas. Continuando, o guia irá abordar o calculate de acordo com seus componentes, que são:
 
 ```
@@ -314,6 +344,8 @@ CALCULATE(
 Observe que há 2 componentes principais, primeiramente a expressão, que se caracteriza pelo cálculo a ser avaliado e, em seguida, o conjunto de filtros aplicados que representam o a modificação no contexto de filtro.
 
 #### Expressão
+
+<br>
 
 A primeira indicação é que haja separação clara de maneira visual, por uma linha de diferença (por exemplo), da expressão e dos argumentos de filtro. Portanto:
 
@@ -341,6 +373,8 @@ CALCULATE(
 ```
 
 #### Conjunto de filtros/ Contexto de filtro
+
+<br>
 
 Para essa seção recomendamos a utilização da formatação com a linha no vírgula no começo do argumento (também conhecido como _Leading Comma_).  Este _guideline_ é intuído pois facilita ao adicionar e remover argumentos de filtros, bem como comentá-los. Exemplificando: 
 
@@ -371,6 +405,8 @@ CALCULATE(
 Por fim, é necessário comentar que, em muitas situações, é oportuno designar o filtro a ser aplicado no calculate em uma variável própria, para isolar a lógica e facilitar a leitura.
 
 #### Quebra de linha para operadores binários
+
+<br>
 
 Ao realizar um cálculo do tipo exemplificado abaixo, é preferível exibir o operador sempre antes, no início da linha, pois possibilita identificar de forma mais rápida como o cálculo está sendo executado.
 
@@ -404,7 +440,12 @@ Observe que, ainda permanece uma linha em branco separando a expressão do conte
 
 ### SELECTCOLUMNS/ADDCOLUMNS
 
+<br>
+
 #### Adição de colunas virtuais
+
+<br>
+
 
 Utilizando o `SELECTCOLUMNS` e o `ADDCOLUMNS` é possível criar colunas virtuais, que serão utilizadas unicamente dentro do contexto do DAX. Aqui seguiremos com a recomendação de seguir a formatação:
 
@@ -417,6 +458,8 @@ Utilizando o `SELECTCOLUMNS` e o `ADDCOLUMNS` é possível criar colunas virtuai
 Insistentemente abordamos o motivo, clareza visual. Nenhum outro objeto aqui definido irá começar com `@`, desta maneira, ao ler o código DAX rapidamente é possível identificar do que se trata.
 
 ### Switch
+
+<br>
 
 Assim como no calculate, o primeiro argumento do switch se trata de uma expressão a ser avaliada (em muitos casos setado como `TRUE()`), então, a recomendação se mantém: separar a expressão por uma linha em branco dos próximos argumentos. Portanto:
 
